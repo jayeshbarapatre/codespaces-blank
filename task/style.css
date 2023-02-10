@@ -1,0 +1,328 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background: #f1f1f1;
+  height: 60px;
+  margin-bottom: 20px;
+  padding: 0 20px;
+  z-index: 10;
+  /* for positioning text, links, etc */
+  display: flex;
+  align-items: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sticky_me {
+  position: sticky;
+  top: 80px; /* the height of the header (60px) + its bottom margin (20px) */
+  padding: 20px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+main {
+  padding-left: 0;
+  flex-grow: 1;
+}
+
+
+
+  .swiper-container {
+    margin-top: 2em; 
+  }
+  .swiper-wrapper {
+    margin-bottom: 3em;
+    width: 80%;
+  }
+  .swiper-slide  {
+    width: 50%;
+  }
+  .swiper-slide:first-child {
+      width: 100%;
+  }
+  .swiper-slide:nth-child(2), .swiper-slide:nth-child(3) {
+      width: 50%;
+  }
+  .swiper-slide:nth-child(4), .swiper-slide:nth-child(5) {
+      width: 100%;
+  }
+  @media (min-width: 31.25em) {
+    .swiper-wrapper {
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+    .swiper-slide {
+      width: 100%;
+    }
+    @media (min-width: 31.25em) {
+      .swiper-slide  {
+        width: 50%;
+      }
+    }
+    @media (min-width: 43.75em) {
+      .swiper-slide  {
+        width: 33.33333333333%;
+      }
+    }
+    @media (min-width: 53em) {
+      
+    }
+    .swiper-pagination {
+      display: block;
+    }
+    @media (min-width: 31.25em) {
+      .swiper-pagination {
+        display: none;
+      }
+      .product {
+          margin-left: auto;
+          margin-right: auto;
+          width: 82%;
+          margin-bottom: 0;
+      }
+
+    }
+
+/* ==========================================================================
+   content in swiper
+ ========================================================================== */
+
+.product {
+  margin-left: auto;
+  margin-right: auto;
+  width: 82%;
+  margin-bottom: 40px;
+}
+.photograph {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+@media(max-width: 767px){
+  aside {
+    position: relative;
+    top: 0;
+    height: auto;
+  }
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+.thumb {
+    width: 50px;
+    height: 63px;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    margin-right: 4px;
+}
+.thumb img{
+    height: 100%;
+    max-width: 100%;
+    margin: auto;
+}
+.btn-primary, .btn-primary:hover, .btn-primary:focus{
+  background: #000000;
+  border: 0.999053px solid #000000;
+  border-radius: 100px;
+  padding: 15px;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  text-transform: uppercase;
+  /* White */
+  color: #FFFFFF;
+}
+.size a {
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    border-radius: 100px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 8px 21px;
+    margin: 2px;
+    width: calc(25% - 4px);
+}
+.size a.selected{
+  background: #000;
+  color: #fff;
+  border-color: #000;
+}
+span.price {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #000000;
+}
+.testimonial p{
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 140%;
+  text-align: center;
+  color: #000000;
+}
+.testimonial span{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+}
+.testimonial h6{
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.nav-tabs .nav-link {
+  margin-bottom: 0;
+  background: 0 0;
+  border: 0px solid transparent;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 8px 0px;
+  margin-right: 21px;
+  border-bottom: 2px solid transparent;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 120%;
+  text-transform: uppercase;
+  color: #767676;
+}
+.nav-tabs .nav-link.active{
+  color: #000;
+  border-bottom: 2px solid #000
+}
+
+.tab-pane{
+  margin-top: 15px;
+}
+.tab-pane p{
+  margin-bottom: 15px;
+}
+.nav-tabs {
+    border-bottom: 0px solid #dee2e6;
+}
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 5px;
+    background: #000000;
+    opacity: 0.2;
+    border-radius: 4px;
+    width: 16px;
+    height: 2px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+    opacity: 1 !important;
+    background: #000 !important;
+}
